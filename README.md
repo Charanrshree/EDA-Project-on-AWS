@@ -4,7 +4,7 @@
 
 Let's build a simple event-driven application using AWS services like Amazon S3, AWS Lambda, and Amazon SNS (Simple Notification Service). 
 
-Use Case: Image Upload Notification System
+Use Case: Image Upload Notification System \
 When an image is uploaded to an S3 bucket, a Lambda function processes the event and sends a notification through SNS.
 
 ### Project Architecture:
@@ -13,13 +13,13 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
 
 ### Steps to Build the Project:
 
-* Step 1: Set Up an AWS Account \
-* Step 2: Create an S3 Bucket (S3 Bucket Name: amc-eda-project-123) \
-* Step 3: Create an SNS Topic (SNS Topic Name: ImageUploadNotification) \
-* Step 4: Create a Subscription \
-* Step 5: Create a Lambda Function (SNS Topic Name: ImageUploadProcessor) \
-* Step 6: Add S3 trigger \
-* Step 7: Write Lambda Function Code \
+* Step 1: Set Up an AWS Account 
+* Step 2: Create an S3 Bucket (S3 Bucket Name: amc-eda-project-123) 
+* Step 3: Create an SNS Topic (SNS Topic Name: ImageUploadNotification) 
+* Step 4: Create a Subscription 
+* Step 5: Create a Lambda Function (SNS Topic Name: ImageUploadProcessor) 
+* Step 6: Add S3 trigger 
+* Step 7: Write Lambda Function Code 
 * Step 8: Test the System
 
 ### Expected Outcome:
@@ -29,7 +29,6 @@ By following these steps, you will have created a simple event-driven applicatio
 This project will help you improve your skills in cloud computing, serverless architecture, and AWS services.
 
 Link to the video tutorial: 
-
 
 Follow our tutorials here: https://www.youtube.com/@amonkincloud/videos \
 Follow my personal blog here:https://dev.to/yeshwanthlm/ \
