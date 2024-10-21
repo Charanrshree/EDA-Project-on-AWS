@@ -33,29 +33,30 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
 
                        {
                           "Version": "2012-10-17",
-                           "Statement": [
-                               {
-                                     "Effect": "Allow",
-                                      "Action": [
-                                      "s3:GetObject",
-                                      "s3:PutObject",
-                                        "s3:ListBucket"
-                                               ],
-                           "Resource": [
-                              "arn:aws:s3:::777777777777777777777",
-                              "arn:aws:s3:::777777777777777777777/*"
-                          ]
-                      }
-                   ]
-               }
+                          "Statement": [
+                              {
+                                 "Effect": "Allow",
+                                 "Action": [
+                                    "s3:GetObject",
+                                    "s3:PutObject",
+                                    "s3:ListBucket"
+                                 ],
+                                 "Resource": [
+                                     "arn:aws:s3:::777777777777777777777",
+                                     "arn:aws:s3:::777777777777777777777/*"
+                                 ]
+                             }
+                         ]  
+                     }
 
-4. attach all the policies to lamda function in configuration and edit add the role
+5. attach all the policies to lamda function in configuration and edit add the role
 
-5. when u create the s3 trigger prefix: if u have s3 path name like images/ then only give that name, otherwise leave empty and
+6. when u create the s3 trigger
+ prefix: if u have s3 path name like images/ then only give that name, otherwise leave empty and
    
-                                suffix: u can leave empty means in root s3 bucket will take and if u have path then give like .jpg if u give this format only, it will consider
+   suffix: u can leave empty means in root s3 bucket will take and if u have path then give like .jpg if u give this format only, it will consider
    
-6. this all above steps i dicovered
+7. this all above steps i dicovered
 
 ### Expected Outcome:
 
