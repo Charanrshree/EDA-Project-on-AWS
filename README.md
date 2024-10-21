@@ -25,8 +25,11 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
 **Create a role: s3upload_sns-lambda-role**
 
 1. lamda execution basic with lambda
+   
 2.  sns full access
+   
 3.  s3 access below policy
+   
 
   {
     "Version": "2012-10-17",
@@ -45,9 +48,13 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
         }
     ]
 }
+
 4. attach all the policies to lamda function in configuration and edit add the role
+
 5. when u create the s3 trigger prefix: if u have s3 path name like images/ then only give that name, otherwise leave empty and
+   
                                 suffix: u can leave empty means in root s3 bucket will take and if u have path then give like .jpg if u give this format only, it will consider
+   
 6. this all above steps i dicovered
 
 ### Expected Outcome:
