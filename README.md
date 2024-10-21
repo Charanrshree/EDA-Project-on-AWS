@@ -31,23 +31,23 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
 3.  s3 access below policy
    
 
-  {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:ListBucket"
-            ],
-            "Resource": [
-                "arn:aws:s3:::777777777777777777777",
-                "arn:aws:s3:::777777777777777777777/*"
-            ]
-        }
-    ]
-}
+                       {
+                          "Version": "2012-10-17",
+                           "Statement": [
+                               {
+                                     "Effect": "Allow",
+                                      "Action": [
+                                      "s3:GetObject",
+                                      "s3:PutObject",
+                                        "s3:ListBucket"
+                                               ],
+                           "Resource": [
+                              "arn:aws:s3:::777777777777777777777",
+                              "arn:aws:s3:::777777777777777777777/*"
+                          ]
+                      }
+                   ]
+               }
 
 4. attach all the policies to lamda function in configuration and edit add the role
 
