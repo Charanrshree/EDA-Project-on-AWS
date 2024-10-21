@@ -73,8 +73,7 @@ For queries write to us at: amonkincloud@gmail.com
 
 
 
-json
-Copy code
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
