@@ -70,3 +70,25 @@ Follow our tutorials here: https://www.youtube.com/@amonkincloud/videos \
 Follow my personal blog here:https://dev.to/yeshwanthlm/ \
 Follow us on Instagram: https://www.instagram.com/amonkincloud/ \
 For queries write to us at: amonkincloud@gmail.com 
+
+
+
+json
+Copy code
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::777777777777777777777",
+        "arn:aws:s3:::777777777777777777777/*"
+      ]
+    }
+  ]
+}
