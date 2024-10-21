@@ -49,7 +49,7 @@ When an image is uploaded to an S3 bucket, a Lambda function processes the event
     }
   ]
 }
-json```
+```
 
 
 5. attach all the policies to lamda function in configuration and edit add the role
